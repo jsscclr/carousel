@@ -7,5 +7,3 @@ const carousel = new Carousel(
   carouselPreviousButton,
   carouselNextButton
 );
-
-console.log(carousel);

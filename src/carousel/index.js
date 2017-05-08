@@ -13,13 +13,11 @@ class Carousel {
   }
 
   setup() {
-    this.previousButton.addEventListener("click", this.previous);
-    this.nextButton.addEventListener("click", this.next);
+    this.previousButton.addEventListener("click", this.previous.bind(this));
+    this.nextButton.addEventListener("click", this.next.bind(this));
   }
 
   previous() {
-    console.log(this.currentIndex);
-    console.log(this.images[this.currentIndex]);
     this.images[this.currentIndex].classList.remove("active");
     this.currentIndex = this.currentIndex - 1;
     this.images[this.currentIndex].classList.add("active");
