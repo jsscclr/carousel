@@ -1,0 +1,6 @@
+{
+  "outputDirectory": "dist",
+  "assetsDirectory": "static",
+  "devtool": "cheap-module-eval-source-map"
+  "sourceDirectory": "src"
+}
